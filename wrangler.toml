@@ -8,4 +8,8 @@ preview_urls = false
 # unless you intentionally want this repository to manage them.
 
 [observability]
-enabled = false
+enabled = true
+
+[observability.logs]
+enabled = true
+invocation_logs = true

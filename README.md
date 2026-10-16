@@ -44,7 +44,7 @@ https://secrets.example.com/inventory/dev/
 4. 在 Cloudflare 的 Workers & Pages → Worker → Settings → Domains & Routes → Add → Custom Domain，填自己的網域，例如 `secrets.example.com`。
 5. 新增下節的範圍 Secret，再從應用服務主機驗證授權。
 
-預設關閉 `workers.dev`、預覽網址與 observability。自訂網域由 Dashboard 管理；設定檔刻意不包含 `route`／`routes`，讓後續部署保留 Dashboard 的路由設定。不需要把自己的網域、IP 或密鑰寫進這個公開 repo。
+預設關閉 `workers.dev` 與預覽網址，啟用 Workers Logs 與每次呼叫紀錄，方便排查請求失敗及執行錯誤。請勿在程式日誌中輸出 Authorization header、密鑰 JSON 或回應內容。自訂網域由 Dashboard 管理；設定檔刻意不包含 `route`／`routes`，讓後續部署保留 Dashboard 的路由設定。不需要把自己的網域、IP 或密鑰寫進這個公開 repo。
 
 若要接手既有 Worker，在原 Worker 綁定此 repo，保留相同 Worker 名稱與既有自訂網域即可。請先備妥自己保管的密鑰副本，並核對已配置範圍與部署影響。
 

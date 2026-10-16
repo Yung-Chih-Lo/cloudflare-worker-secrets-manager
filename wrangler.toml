@@ -1,0 +1,11 @@
+# Keep this name equal to the existing Worker when connecting Workers Builds.
+name = "secrets"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+preview_urls = false
+# Domains are managed in the Cloudflare dashboard. Do not add route/routes here
+# unless you intentionally want this repository to manage them.
+
+[observability]
+enabled = false
